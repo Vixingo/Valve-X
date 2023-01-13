@@ -5,9 +5,20 @@ export const theme = createTheme({
         primary: {
             main: "#186FE7",
         },
+        background: {
+            default: "#000",
+        },
     },
 
     typography: {
         fontFamily: "Poppins",
+    },
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 600,
+            md: 900,
+            lg: 1024,
+        },
     },
 });
