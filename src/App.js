@@ -1,9 +1,12 @@
 import "./App.css";
+import LandingPage from "./Pages/LandingPage";
+
+
 
 function App() {
     return (
         <>
-            <h1>ore khoti - by likhon</h1>
+            <LandingPage />
         </>
     );
 }
