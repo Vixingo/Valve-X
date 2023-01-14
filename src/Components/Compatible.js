@@ -17,17 +17,22 @@ function Compatible() {
             alignItems: "center",
             justifyContent: "space-between",
             marginTop: "20px",
+            "@media(max-width:600px)": {
+              flexDirection: "column",
+              alignItems: "basline",
+              margin: "0 auto",
+            },
           }}
         >
-          <img src="./img/ethereum.png" alt="" />
+          <img className="Cripto_img" src="./img/ethereum.png" alt="" />
 
-          <img src="./img/polygon.png" alt="" />
+          <img className="Cripto_img" src="./img/polygon.png" alt="" />
 
-          <img src="./img/binance.png" alt="" />
+          <img className="Cripto_img" src="./img/binance.png" alt="" />
 
-          <img src="./img/tether.png" alt="" />
+          <img className="Cripto_img" src="./img/tether.png" alt="" />
 
-          <img src="./img/metamask.png" alt="" />
+          <img className="Cripto_img" src="./img/metamask.png" alt="" />
         </Box>
       </Container>
     </>
