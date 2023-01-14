@@ -5,7 +5,7 @@ import Card from "./Card";
 function Hero() {
   return (
     <>
-      <Container sx={{ marginTop: "100px" }}>
+      <Container sx={{ paddingTop: "100px" }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
             <Box>
