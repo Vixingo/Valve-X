@@ -4,13 +4,13 @@ import { Typography, Box, Container, Grid, Button } from "@mui/material";
 function SendCrypto() {
   return (
     <>
-      <Container sx={{ paddingTop: "150px" }}>
+      <Container sx={{ paddingTop: "70px" }}>
         <Grid container spacing={2}>
           <Grid item xs={12} md={7}>
             <Box>
               <Typography
                 variant="h3"
-                sx={{ fontSize: "40px", fontWeight: "600", lineHeight: "56px" }}
+                sx={{ fontSize: "54px", fontWeight: "600", lineHeight: "56px" }}
               >
                 Send any crypto seamlessly
               </Typography>
@@ -20,6 +20,7 @@ function SendCrypto() {
                   fontWeight: "400",
                   marginTop: "25px",
                   lineHeight: "25px",
+                  paddingRight: "20px",
                 }}
               >
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -29,6 +30,21 @@ function SendCrypto() {
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </Typography>
+
+              <Button
+                sx={{
+                  background:
+                    "linear-gradient(94.32deg, #007AFF 1.74%, #A9148B 96.61%)",
+                  borderRadius: "10px",
+                  padding: "10px 30px",
+                  marginTop: "50px",
+                  color: "#fff",
+                  fontSize: "14px",
+                  fontWeight: "400",
+                }}
+              >
+                Go to app
+              </Button>
             </Box>
           </Grid>
           <Grid item xs={12} md={5}>

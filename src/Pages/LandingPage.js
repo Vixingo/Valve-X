@@ -12,11 +12,11 @@ function LandingPage() {
   return (
     <>
       <Header />
-      <Hero />
+      <SendCrypto />
       <Compatible />
       <Boxs />
       <Steppers />
-      <SendCrypto />
+      <Hero />
       <NftTransfer />
       <NeedHelp />
     </>
