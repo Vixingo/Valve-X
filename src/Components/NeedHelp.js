@@ -168,8 +168,10 @@ function NeedHelp() {
                     padding: "10px 30px",
                     marginTop: "20px",
                     color: "#fff",
-                    fontSize: "14px",
+                    fontSize: "16px",
                     fontWeight: "400",
+                    textTransform: "inherit",
+                    height: "56px",
                   }}
                 >
                   Send email

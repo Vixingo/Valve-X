@@ -11,30 +11,6 @@ import StepConnector, {
 } from "@mui/material/StepConnector";
 import { Container, Typography } from "@mui/material";
 
-// const QontoConnector = styled(StepConnector)(({ theme }) => ({
-//   [`&.${stepConnectorClasses.alternativeLabel}`]: {
-//     top: 10,
-//     left: "calc(-50% + 16px)",
-//     right: "calc(50% + 16px)",
-//   },
-//   [`&.${stepConnectorClasses.active}`]: {
-//     [`& .${stepConnectorClasses.line}`]: {
-//       borderColor: "#1A1924",
-//     },
-//   },
-//   [`&.${stepConnectorClasses.completed}`]: {
-//     [`& .${stepConnectorClasses.line}`]: {
-//       borderColor: "#1A1924",
-//     },
-//   },
-//   [`& .${stepConnectorClasses.line}`]: {
-//     borderColor:
-//       theme.palette.mode === "dark" ? theme.palette.grey[800] : "#1A1924",
-//     borderTopWidth: 3,
-//     borderRadius: 1,
-//   },
-// }));
-
 const QontoStepIconRoot = styled("div")(({ theme, ownerState }) => ({
   color: theme.palette.mode === "dark" ? theme.palette.grey[700] : "#1A1924",
   display: "flex",
@@ -167,14 +143,14 @@ ColorlibStepIcon.propTypes = {
 
 const steps = [
   "You enter amount and recipient address",
-  "We generate 90 second a secure link ",
+  "We generate an expirable link ",
   "Recipient enters wallet on the link for confimation",
-  "We send the payment",
+  "Your payment or NFT gets sent",
 ];
 
 export default function Steppers() {
   return (
-    <Container>
+    <Container sx={{ paddingTop: "100px" }}>
       <Typography
         sx={{
           fontSize: "40px",

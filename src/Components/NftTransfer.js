@@ -7,7 +7,7 @@ function NftTransfer() {
     <>
       <Container sx={{ paddingTop: "150px" }}>
         <Grid container spacing={2}>
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
                 maxWidth: "430px",
@@ -26,6 +26,7 @@ function NftTransfer() {
                   color: "#fff",
                   marginTop: "15px",
                   width: "100%",
+                  height: "64px",
                 }}
                 placeholder="Search name or wallet id"
               />
@@ -41,6 +42,7 @@ function NftTransfer() {
                   backgroundColor: "transparent",
                   color: "#fff",
                   marginTop: "15px",
+                  height: "48px",
                   width: "100%",
                 }}
                 placeholder="Enter Recipient Address"
@@ -53,6 +55,8 @@ function NftTransfer() {
                   color: "#fff",
                   padding: "10px",
                   borderRadius: "20px",
+                  textTransform: "inherit",
+                  height: "48px",
                   "&:hover": {
                     backgroundColor: "#007AFF",
                   },

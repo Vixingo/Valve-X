@@ -15,9 +15,9 @@ function LandingPage() {
       <SendCrypto />
       <Compatible />
       <Boxs />
-      <Steppers />
       <Hero />
       <NftTransfer />
+      <Steppers />
       <NeedHelp />
     </>
   );

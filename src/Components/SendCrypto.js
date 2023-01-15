@@ -30,27 +30,12 @@ function SendCrypto() {
                 It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
               </Typography>
-
-              <Button
-                sx={{
-                  background:
-                    "linear-gradient(94.32deg, #007AFF 1.74%, #A9148B 96.61%)",
-                  borderRadius: "10px",
-                  padding: "10px 30px",
-                  marginTop: "50px",
-                  color: "#fff",
-                  fontSize: "14px",
-                  fontWeight: "400",
-                }}
-              >
-                Go to app
-              </Button>
             </Box>
           </Grid>
           <Grid item xs={12} md={5}>
             <Box
               sx={{
-                maxWidth: "430px",
+                maxWidth: "460px",
                 backgroundColor: "#1A1924",
                 padding: "20px",
                 borderRadius: "16px",
@@ -134,7 +119,7 @@ function SendCrypto() {
                 }}
               >
                 <Typography sx={{ fontSize: "14px" }}>
-                  John doe | ETH | 0000....x000
+                  OtherWallet2 | USDT | 0000....x000
                   <Typography
                     sx={{
                       fontSize: "14px",
@@ -169,7 +154,7 @@ function SendCrypto() {
                 }}
               >
                 <Typography sx={{ fontSize: "14px" }}>
-                  John doe | ETH | 0000....x000
+                  Developer | USDC | 0000....x000
                   <Typography
                     sx={{
                       fontSize: "14px",
