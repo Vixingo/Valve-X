@@ -11,11 +11,36 @@ import StepConnector, {
 } from "@mui/material/StepConnector";
 import { Container, Typography } from "@mui/material";
 
+// const QontoConnector = styled(StepConnector)(({ theme }) => ({
+//     [`&.${stepConnectorClasses.alternativeLabel}`]: {
+//         top: 10,
+//         left: "calc(-50% + 16px)",
+//         right: "calc(50% + 16px)",
+//     },
+//     [`&.${stepConnectorClasses.active}`]: {
+//         [`& .${stepConnectorClasses.line}`]: {
+//             borderColor: "#1A1924",
+//         },
+//     },
+//     [`&.${stepConnectorClasses.completed}`]: {
+//         [`& .${stepConnectorClasses.line}`]: {
+//             borderColor: "#1A1924",
+//         },
+//     },
+//     [`& .${stepConnectorClasses.line}`]: {
+//         borderColor:
+//             theme.palette.mode === "dark" ? theme.palette.grey[800] : "#1A1924",
+//         borderTopWidth: 3,
+//         borderRadius: 1,
+//     },
+// }));
+
 const QontoStepIconRoot = styled("div")(({ theme, ownerState }) => ({
   color: theme.palette.mode === "dark" ? theme.palette.grey[700] : "#1A1924",
   display: "flex",
   height: 22,
   alignItems: "center",
+
   ...(ownerState.active && {
     color: "#1A1924",
   }),
@@ -75,10 +100,13 @@ const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
     },
   },
   [`& .${stepConnectorClasses.line}`]: {
-    height: 3,
+    height: 2,
     border: 0,
     backgroundColor: theme.palette.mode === "dark" ? "#1A1924" : "#1A1924",
     borderRadius: 1,
+    "@media(max-width:600px)": {
+      height: 0,
+    },
   },
 }));
 
@@ -92,14 +120,15 @@ const ColorlibStepIconRoot = styled("div")(({ theme, ownerState }) => ({
   borderRadius: "50%",
   justifyContent: "center",
   alignItems: "center",
-  border: "3px solid #1A1924",
+  border: "2px solid #1A1924",
   padding: "50px",
+
   ...(ownerState.active && {
     backgroundColor: "#000",
-    boxShadow: "0 4px 10px 0 rgba(0,0,0,.25)",
   }),
   ...(ownerState.completed && {
-    backgroundColor: "#1A1924",
+    backgroundColor: "#000",
+    color: "#fff",
   }),
 }));
 
@@ -150,7 +179,7 @@ const steps = [
 
 export default function Steppers() {
   return (
-    <Container sx={{ paddingTop: "100px" }}>
+    <Container>
       <Typography
         sx={{
           fontSize: "40px",
@@ -164,12 +193,18 @@ export default function Steppers() {
       <Stack sx={{ width: "100%" }} spacing={4}>
         <Stepper
           alternativeLabel
-          activeStep={0}
+          activeStep={3}
           connector={<ColorlibConnector />}
+          sx={{
+            "@media(max-width:600px)": {
+              flexDirection: "column",
+              alignItems: "center",
+            },
+          }}
         >
           {steps.map((label) => (
             <Step key={label}>
-              <StepLabel StepIconComponent={ColorlibStepIcon}>
+              <StepLabel StepIconComponent={ColorlibStepIcon} sx={{ mb: 4 }}>
                 {label}
               </StepLabel>
             </Step>

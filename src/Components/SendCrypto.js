@@ -31,6 +31,22 @@ function SendCrypto() {
                 electronic typesetting, remaining essentially unchanged.
               </Typography>
             </Box>
+            <Button
+              sx={{
+                background:
+                  "linear-gradient(94.32deg, #007AFF 1.74%, #A9148B 96.61%)",
+                borderRadius: "10px",
+                padding: "10px 30px",
+                marginTop: "50px",
+                color: "#fff",
+                fontSize: "16px",
+                fontWeight: "400",
+                height: "56px",
+                textTransform: "inherit",
+              }}
+            >
+              Go to app
+            </Button>
           </Grid>
           <Grid item xs={12} md={5}>
             <Box

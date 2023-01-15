@@ -1,12 +1,12 @@
 import React from "react";
-import Compatible from "../Components/Compatible";
-import Hero from "../Components/Hero";
-import Header from "../Components/Header";
-import Boxs from "../Components/Boxs";
-import Steppers from "../Components/Steppers";
-import SendCrypto from "../Components/SendCrypto";
-import NftTransfer from "../Components/NftTransfer";
-import NeedHelp from "../Components/NeedHelp";
+import Compatible from "../components/Compatible";
+import Hero from "../components/Hero";
+import Header from "../components/Header";
+import Boxs from "../components/Boxs";
+import Steppers from "../components/Steppers";
+import SendCrypto from "../components/SendCrypto";
+import NftTransfer from "../components/NftTransfer";
+import NeedHelp from "../components/NeedHelp";
 
 function LandingPage() {
   return (

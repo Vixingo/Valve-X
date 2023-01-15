@@ -29,7 +29,7 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
+      <Typography sx={{ my: 2, fontWeight: "bold", fontSize: "19px" }}>
         VALV X
       </Typography>
       <Divider />
@@ -65,43 +65,43 @@ function DrawerAppBar(props) {
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}
-              sx={{ mr: 2, display: { sm: "none" } }}
+              sx={{ mr: 2, display: { md: "none" } }}
             >
               <MenuIcon />
             </IconButton>
             <Typography
-              variant="h6"
-              component="div"
               sx={{
                 flexGrow: 1,
-                display: { xs: "none", sm: "block" },
+                display: { xs: "inline" },
+                fontWeight: "bold",
+                fontSize: "19px",
+                cursor: "pointer",
               }}
             >
               VALV X
             </Typography>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Box sx={{ display: { xs: "none", md: "block" } }}>
               {navItems.map((item) => (
                 <Button key={item} sx={{ color: "#fff" }}>
                   {item}
                 </Button>
               ))}
-              <Button
-                sx={{
-                  background:
-                    "linear-gradient(94.32deg, #007AFF 1.74%, #A9148B 96.61%)",
-                  borderRadius: "10px",
-                  padding: "10px 30px",
-                  color: "#fff",
-                  fontSize: "14px",
-                  textTransform: "inherit",
-                  height: "40px",
-                  ml: 2,
-                  fontWeight: "400",
-                }}
-              >
-                Go to app
-              </Button>
             </Box>
+            <Button
+              sx={{
+                background:
+                  "linear-gradient(94.32deg, #007AFF 1.74%, #A9148B 96.61%)",
+                borderRadius: "10px",
+                width: "134px",
+                height: "40px",
+                color: "#fff",
+                fontSize: "14px",
+                ml: 2,
+                fontWeight: "400",
+              }}
+            >
+              Go to app
+            </Button>
           </Toolbar>
         </Container>
       </AppBar>
@@ -115,7 +115,7 @@ function DrawerAppBar(props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            display: { xs: "block", md: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: drawerWidth,
