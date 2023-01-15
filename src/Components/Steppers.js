@@ -179,7 +179,7 @@ const steps = [
 
 export default function Steppers() {
   return (
-    <Container>
+    <Container sx={{ paddingTop: "100px" }}>
       <Typography
         sx={{
           fontSize: "40px",
