@@ -4,7 +4,7 @@ import React from "react";
 function Compatible() {
   return (
     <>
-      <Container sx={{ marginTop: "100px" }}>
+      <Container sx={{ paddingTop: "100px" }}>
         <Typography
           sx={{ fontSize: "24px", fontWeight: "600", textAlign: "center" }}
         >

@@ -1,14 +1,24 @@
 import React from "react";
 import Compatible from "../components/Compatible";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Header from "../components/Header";
+import Boxs from "../components/Boxs";
+import Steppers from "../components/Steppers";
+import SendCrypto from "../components/SendCrypto";
+import NftTransfer from "../components/NftTransfer";
+import NeedHelp from "../components/NeedHelp";
 
 function LandingPage() {
     return (
         <>
             <Header />
-            <Hero />
+            <SendCrypto />
             <Compatible />
+            <Boxs />
+            <Steppers />
+            <Hero />
+            <NftTransfer />
+            <NeedHelp />
         </>
     );
 }
