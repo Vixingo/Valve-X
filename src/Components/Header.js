@@ -105,9 +105,14 @@ function DrawerAppBar(props) {
                                 display: { xs: "block", md: "none" },
                             }}
                         >
-                            <Box>
-                                <Typography>Hello</Typography>
-                            </Box>
+                            {navItems.map((data) => {
+                                return (
+                                    <MenuItem onClick={handleCloseNavMenu}>
+                                        <Typography>{data}</Typography>
+                                    </MenuItem>
+                                );
+                            })}
+
                             {/* {pages.map((page) => (
                                 <MenuItem
                                     key={page}
