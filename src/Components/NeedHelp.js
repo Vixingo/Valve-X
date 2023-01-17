@@ -53,7 +53,7 @@ function NeedHelp() {
                                     </Button>
                                 </Box>
                                 <Box>
-                                    <Button
+                                    {/* <Button
                                         sx={{
                                             fontSize: "14px",
                                             textTransform: "inherit",
@@ -66,7 +66,7 @@ function NeedHelp() {
                                             alt=""
                                         />{" "}
                                         Official Telegram channel
-                                    </Button>
+                                    </Button> */}
                                 </Box>
                                 <Box>
                                     <Button
@@ -85,7 +85,7 @@ function NeedHelp() {
                                     </Button>
                                 </Box>
                                 <Box>
-                                    <Button
+                                    {/* <Button
                                         sx={{
                                             fontSize: "14px",
                                             textTransform: "inherit",
@@ -98,7 +98,7 @@ function NeedHelp() {
                                             alt=""
                                         />{" "}
                                         Youtube
-                                    </Button>
+                                    </Button> */}
                                 </Box>
                             </Box>
                         </Grid>
@@ -198,13 +198,26 @@ function NeedHelp() {
                 </Box>
             </Container>
             <Container sx={{ paddingBottom: "20px" }}>
-                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
+                <Box
+                    sx={{
+                        display: "flex",
+                        justifyContent: "space-between",
+                        flexWrap: "wrap",
+                        textAlign: { xs: "center", md: "unset" },
+                    }}
+                >
                     <Box>
-                        <Typography sx={{ fontSize: "14px" }}>
+                        <Typography sx={{ fontSize: "14px", mb: 2 }}>
                             Copyright Valve.fi 2023
                         </Typography>
                     </Box>
-                    <Box sx={{ display: "flex" }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+
+                            justifyContent: { xs: "center", md: "unset" },
+                        }}
+                    >
                         <Typography sx={{ fontSize: "14px" }}>
                             Privacy policy
                         </Typography>
