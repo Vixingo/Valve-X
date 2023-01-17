@@ -29,9 +29,9 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-            <Typography sx={{ my: 2, fontWeight: "bold", fontSize: "19px" }}>
-                VALV X
-            </Typography>
+            <Box sx={{ my: 1 }}>
+                <img src="/img/logo.png" alt="logo" />
+            </Box>
             <Divider />
             <List>
                 {navItems.map((item) => (
